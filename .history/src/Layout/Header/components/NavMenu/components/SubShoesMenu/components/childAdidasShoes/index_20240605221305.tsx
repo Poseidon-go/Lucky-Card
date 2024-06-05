@@ -1,0 +1,69 @@
+import "./index.css";
+export const ChildAdidasShoes = () => {
+  return (
+    <div
+      id="ChildAdidasShoes"
+      className="w-[70%] absolute top-0 left-[372px] px-4 py-3"
+    >
+      <ul className="grid grid-cols-4 gap-0">
+        <li className="first:text-[--colorTextSub] first:font-semibold first:text-[16px]">
+          Adidas Original
+          <ul>
+            <li>Stan Smith</li>
+            <li>SuperStar</li>
+            <li>Prophere</li>
+            <li>Falcon</li>
+            <li>Continental 80s</li>
+          </ul>
+        </li>
+        <li className="first:text-[--colorTextSub] first:font-semibold first:text-[16px]">
+          Adidas UltraBoost
+          <ul>
+            <li>Giày Adidas UltraBoost 22</li>
+            <li>UltraBoost 2021</li>
+            <li>UltraBoost 2020</li>
+            <li>UltraBoost 2019</li>
+          </ul>
+        </li>
+        <li className="first:text-[--colorTextSub] first:font-semibold first:text-[16px]">
+          Yeezy Boost
+          <ul>
+            <li>Yeezy Boost</li>
+            <li>Yeezy 350</li>
+            <li>Yeezy 380</li>
+            <li>Yeezy 500</li>
+            <li>Yeezy 700</li>
+          </ul>
+        </li>
+        <li className="first:text-[--colorTextSub] first:font-semibold first:text-[16px]">
+          Adidas NMD
+          <ul>
+            <li>NMD R1</li>
+            <li>NMD R2</li>
+            <li>NMD XR1</li>
+            <li>NMD CS1</li>
+            <li>NMD CS2</li>
+          </ul>
+        </li>
+        <li className="first:text-[--colorTextSub] first:font-semibold first:text-[16px]">
+          Giày chạy Adidas
+          <ul>
+            <li>Swift Run</li>
+            <li>Alphabounce</li>
+            <li>AlphaBoost</li>
+            <li>XPLR</li>
+            <li>Adidas EQT</li>
+            <li>Adidas ZX</li>
+          </ul>
+        </li>
+        <li className="first:text-[--colorTextSub] first:font-semibold first:text-[16px]">
+          Dép Adidas
+          <ul>
+            <li>Dép kẹp</li>
+            <li>Giép quai ngang</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  );
+};
