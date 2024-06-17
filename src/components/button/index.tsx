@@ -1,15 +1,15 @@
-function AddToCart() {
-  function handleAddToCart() {}
+interface Button {
+  name?: string;
+  styleButton?: string;
+  styleText?: string;
+}
+function ButtonCustom(props: Button) {
+  const { name, styleButton, styleText } = props;
   return (
-    <div className="flex items-center justify-center w-[400px] h-[400px]">
-      <button
-        onClick={handleAddToCart}
-        className="text-black border  border-[#000 ] px-2 py-3 rounded-[5px]"
-      >
-        Thêm Vào Giỏ Hàng
-      </button>
-    </div>
+    <button className={styleButton}>
+      <span className={styleText}>{name}</span>
+    </button>
   );
 }
 
-export default AddToCart;
+export default ButtonCustom;

@@ -1,16 +1,52 @@
-import Footer from "./Layout/Footer";
-import { Header } from "./Layout/Header";
+import { Route, Routes } from "react-router-dom";
+import { DefaultLayout } from "./Layout";
+import HomePage from "./pages/HomePage";
 import "./index.css";
 import "./styles/global.css";
-
-import MainContent from "./Layout/MainContent";
-
 function App() {
   return (
     <>
-      <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <DefaultLayout
+              children={
+                <>
+                  <HomePage />
+                </>
+              }
+            />
+          }
+        />
+        <Route
+          path="/sneaker"
+          element={
+            <DefaultLayout
+              children={
+                <>
+                  <>Skeaer</>
+                </>
+              }
+            />
+          }
+        />
+        <Route
+          path="/perfume"
+          element={
+            <DefaultLayout
+              children={
+                <>
+                  <>perfume</>
+                </>
+              }
+            />
+          }
+        />
+      </Routes>
+      {/* <Header />
       <MainContent />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
