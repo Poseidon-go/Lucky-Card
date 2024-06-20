@@ -1,13 +1,12 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import { ReactNode } from "react";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+import {ReactNode} from 'react';
 
 interface BannerCarousel {
   children: ReactNode;
 }
-export const BannerCarousel = ({ children }: BannerCarousel) => {
-  console.log("redner", children);
+export const BannerCarousel = ({children}: BannerCarousel) => {
   const settings = {
     dots: true,
     infinite: true,

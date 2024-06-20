@@ -1,9 +1,9 @@
-import "./index.css";
+import './index.css';
 function NavDropdownAdidas() {
   return (
     <div
       id="ChildAdidasShoes"
-      className="w-[70%] absolute top-0 left-[372px] px-4 py-3 invisible opacity-0 group-hover/childAdidas:visible group-hover/childAdidas:opacity-[1] "
+      className="w-[70%] absolute after:absolute after:top-[14px] after:left-[-11px] after:content-[''] after:block  after:w-10 after:h-10  top-0 left-[372px] px-4 py-3 hidden group-hover/childAdidas:block "
     >
       <ul className="grid grid-cols-4 gap-0">
         <li className="text-[--colorTextSub] text-[16px]">
@@ -23,9 +23,7 @@ function NavDropdownAdidas() {
             Adidas UltraBoost
           </span>
           <ul className="py-3 text-[14px] font-normal">
-            <li className="hover:text-[--colorshophover]">
-              Giày Adidas UltraBoost 22
-            </li>
+            <li className="hover:text-[--colorshophover]">Giày Adidas UltraBoost 22</li>
             <li className="hover:text-[--colorshophover]">UltraBoost 2021</li>
             <li className="hover:text-[--colorshophover]">UltraBoost 2020</li>
             <li className="hover:text-[--colorshophover]">UltraBoost 2019</li>

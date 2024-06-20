@@ -1,5 +1,4 @@
-import { useId } from "react";
-import "./index.css";
+import {useId} from 'react';
 
 interface Item {
   ship: string;
@@ -9,31 +8,25 @@ interface Item {
   date: string;
 }
 
-const PromotionsCard = ({ ship, priceOrder, code, date, price }: Item) => {
+const PromotionsCard = ({ship, priceOrder, code, date, price}: Item) => {
   const id = useId();
   return (
     <>
       <div
         key={id}
         id="MainPromotions__coupon-item"
-        className="flex flex-row bg-[#fff] w-full"
+        className="flex flex-row bg-[#fff] w-full border-l-[10px] border-[--bgflashsale] rounded-l-lg shadow-lg cursor-pointer"
       >
         <div
           id="MainPromotions__coupon-price"
           className="flex items-center justify-center basis-1/4 "
         >
-          <span className="text-[--bgflashsale] text-[22px] font-bold">
-            {price}
-          </span>
+          <span className="text-[--bgflashsale] text-[22px] font-bold">{price}</span>
         </div>
-        <div className="p-[10px] basis-3/4 relative">
+        <div className="p-[10px] basis-3/4 relative border-l-[1px] border-dashed border-[#ccc]">
           <div className="">
-            <span className="text-black text-[15px] font-bold block">
-              {ship}
-            </span>
-            <span className="text-[11px] font-normal text-black block">
-              {priceOrder}
-            </span>
+            <span className="text-black text-[15px] font-bold block">{ship}</span>
+            <span className="text-[11px] font-normal text-black block">{priceOrder}</span>
             <span className="text-[11px] text-black block">
               <span className="text-inherit">Mã:</span>
               <span className="text-inherit font-bold"> {code}</span>

@@ -1,4 +1,3 @@
-import {MdOutlineKeyboardDoubleArrowRight} from 'react-icons/md';
 import img10a from '../../../../../../assets/Image/Shoes/Adidas/contents/s10a.webp';
 import img10b from '../../../../../../assets/Image/Shoes/Adidas/contents/s10b.webp';
 import img1a from '../../../../../../assets/Image/Shoes/Adidas/contents/s1a.png';
@@ -19,8 +18,11 @@ import img8a from '../../../../../../assets/Image/Shoes/Adidas/contents/s8a.webp
 import img8b from '../../../../../../assets/Image/Shoes/Adidas/contents/s8b.webp';
 import img9a from '../../../../../../assets/Image/Shoes/Adidas/contents/s9a.webp';
 import img9b from '../../../../../../assets/Image/Shoes/Adidas/contents/s9b.webp';
-import HomeProduct from './HomeProduct';
 import CollectionDefault from './CollectionDefault';
+import HomeBanner from './HomeBanner';
+import HomeBlog from './HomeBlog';
+import HomeProduct from './HomeProduct';
+import PerfumeProduct from './PerfumeProduct';
 
 interface productList {
   title: string | 'Not Found Title';
@@ -104,9 +106,12 @@ function Contents() {
     },
   ];
   return (
-    <div className="mt-5">
+    <div className="mt-5 mb-9">
       <HomeProduct productList={productList} />
       <CollectionDefault />
+      <HomeBanner />
+      <PerfumeProduct />
+      <HomeBlog />
     </div>
   );
 }

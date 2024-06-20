@@ -1,28 +1,25 @@
-import { BiChevronDown } from "react-icons/bi";
+import {BiChevronDown} from 'react-icons/bi';
 // import useRandomHolder from "../../../hooks/useRandomHolder";
-import { Link } from "react-router-dom";
+import {Link} from 'react-router-dom';
+import useRandomHolder from '../../../hooks/useRandomHolder';
 
 export interface HeaderProps {}
 
 function Header(props: HeaderProps) {
-  console.log(props);
-  // const holder = useRandomHolder();
+  const holder = useRandomHolder();
   return (
-    <div className="flex flex-col bg-[--bgHeader] cursor-pointer  ">
-      <div
-        id="header__top"
-        className="w-pc mx-auto flex items-center px-[10px]"
-      >
+    <div className="flex flex-col bg-[--bgHeader] cursor-pointer   ">
+      <div id="header__top" className="w-pc mx-auto flex items-center px-[10px]">
         <div id="Head__logo" className="flex items-center pl-4">
           <span className="text-[#fff] text-[40px] font-bold ">
-            <Link to={"/"}>LuckyCard</Link>
+            <Link to={'/'}>LuckyCard</Link>
           </span>
         </div>
         <div id="head__search" className="relative pl-8">
           <input
             type="text"
             className="w-[600px] p-2 outline-none rounded-[5px] text-[#000] placeholder:font-light"
-            placeholder={"Tìm kiếm ... Bạn muốn gì"}
+            placeholder={holder}
           />
           <button
             id="header__search-lock"
@@ -37,10 +34,7 @@ function Header(props: HeaderProps) {
             />
           </button>
         </div>
-        <div
-          id="head__location"
-          className="flex items-center justify-center ml-2 pl-4"
-        >
+        <div id="head__location" className="flex items-center justify-center ml-2 pl-4">
           <img
             width="24"
             height="24"

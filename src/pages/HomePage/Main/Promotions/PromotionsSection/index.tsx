@@ -1,9 +1,8 @@
 import PromotionsCard from './PromotionsCard';
-
 function PromotionsSection({proList}) {
   return (
     <div id="MainPromotions__coupon" className="mb-14">
-      <h1>
+      <h1 className="border-l-[3px] border-[#000]">
         <span className="text-[20px] text-[#000] uppercase font-bold ml-2 mb-3 block">
           khuyến mãi dành cho bạn
         </span>

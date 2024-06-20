@@ -1,12 +1,11 @@
-import { BiChevronRight } from "react-icons/bi";
-import NavDropdownAdidas from "./components/NavDropdownAdidas";
-import NavDropdownNike from "./components/NavDropdownNike";
-import "./index.css";
+import {BiChevronRight} from 'react-icons/bi';
+import NavDropdownAdidas from './components/NavDropdownAdidas';
+import NavDropdownNike from './components/NavDropdownNike';
 function NavDropdown() {
   return (
     <div
       id="head__menu-sub"
-      className="absolute w-full  top-[43px] left-0 h-[532px] bg-[#fff] z-10 invisible opacity-0  shadow-md group-hover/subShoes:visible group-hover/subShoes:opacity-[1]"
+      className="absolute w-full  top-[43px] left-0 h-[532px] bg-[#fff] z-10 invisible opacity-0 border-t-[3px] border-black  shadow-md group-hover/subShoes:visible group-hover/subShoes:opacity-[1]"
     >
       <div className="h-full w-[30%] bg-[#ECECEC] p-3">
         <ul className="">

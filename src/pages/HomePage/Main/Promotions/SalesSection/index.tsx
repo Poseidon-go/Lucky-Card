@@ -18,10 +18,7 @@ function SalesSection(props) {
       id="MainPromotions__sales"
       className="border border-[--bgflashsale]  w-full p-[15px] bg-[--bgflashsale] rounded-[10px]"
     >
-      <div
-        id="MainPromotions__sales-heading"
-        className="flex items-center mb-4  "
-      >
+      <div id="MainPromotions__sales-heading" className="flex items-center mb-4  ">
         <img
           width={20}
           height={20}
@@ -29,31 +26,22 @@ function SalesSection(props) {
           alt=""
           className="mr-2"
         />
-        <h1 className="text-[20px] font-semibold uppercase mr-2">
-          sản phẩm khuyến mãi
-        </h1>
+        <h1 className="text-[20px] font-semibold uppercase mr-2">sản phẩm khuyến mãi</h1>
         <div id="" className="">
           <ul className="flex">
             {timeList.map((timeItem, index) => {
               const {time, name} = timeItem;
-              return (
-                <SalesTimeCard key={index} time={time} name={name} />
-              );
+              return <SalesTimeCard key={index} time={time} name={name} />;
             })}
           </ul>
         </div>
+        <div></div>
       </div>
       <div id="MainPromotions__sales-content" className="mb-3">
         <ul className=" w-full">
           <Slider {...settings}>
             {productDiscountList.map((productItem, index) => {
-              const {
-                title,
-                priceProduct,
-                discountProduct,
-                imgA,
-                imgB,
-              } = productItem;
+              const {title, priceProduct, discountProduct, imgA, imgB} = productItem;
               return (
                 <SalesContentCard
                   key={index}
@@ -69,10 +57,7 @@ function SalesSection(props) {
         </ul>
       </div>
 
-      <div
-        id="MainPromotions__sales-button"
-        className="flex justify-center mt-7"
-      >
+      <div id="MainPromotions__sales-button" className="flex justify-center mt-7">
         <button className="flex justify-center px-[60px] py-[10px] rounded-[5px] bg-[#fff] ">
           <div className="flex items-center text-[14px] text-[#000]">
             <span className="mr-1 text-inherit">Xem Tất Cả</span>

@@ -1,10 +1,15 @@
+/* @import url(../assets/Image/Frame/frameMain.png.webp); */
+
 :root {
     --bgHeader: #202020;
     --bgFooter: #202020;
     --colorshophover: #288ad6;
     --bgflashsale: #e31515;
+    --textPrice: #e31515;
+    --textDiscount: #888;
     --colorText: #fff;
     --colorMain: #fff;
     --colorTextSub: #000;
     --bgContent: #F5F5F5;
+    --bgFrame: url(https://lh3.googleusercontent.com/pw/AP1GczPNFptCX6Svs3iREN3hHDRk2pvPtwNpg4odhzrX81SFy4bvjWEskUPNE3mraDwpqCVxUUX4LJbH2NVKcTYA4a0fpBTJ7XyUiSluObvJkD64CMkRZ1-C1h38NAN9eNGROVGcbKA44NO3fxrM-XEK_wzIs1q9qGKBTtBJ_vc7Gho5xEyVBtmGxLdhs7V9auZ_gArMBylO6eSeB5H7pnIuAcRD2ImgFzDbnasG4Rd5KVzXasO4TJDt4EE3qe8wnJLP7hlfpY80suWma7DU_cn0qj162BE-XfWQZSJ4riLSrXSc2GNyBxuACTTLa_uUzLMuEHCMN2D_7NoOoEKpqP1KzaZE9bZWrcjCP0GKtqIXoDIpJ8UFUIgFT-VYktjUfyX4QGRzFE3ASD17TEDtEOFgg4EndMWNhDpdOk9CAVvY2SmvtxJDB_SULPsSxjOJjdEuZfJJJyiDXLAXJYjH3Dq65sctvHsOszM5qtPu8Nh4lClopzjTdxu7FROoJVwDFIIEmc5qOVcG7H-Fgp-pYyQtCIWt9dwXZwfMLr-_vl1NgsfLdwM4VyVyvfWNiFx_FJyc23JqL1C-F5AsP5XrWug3xYNLx0djpsjQ-WAqm3oOzflwSAjldf2OKaFW0N2HAlK2wllWy3Re96BNMxWAaJRVy6NuxovxxTpMv4svj8B65cQKJIHL3BYxWIgfsKW_exRKL2uI4rJAJ4nBXvQRx0xKOzNsdb0WS26YMCE8DDcxpV8Jz8YeSU7L3DWJQHIezmF0ZSS9L0ikoZgyDSNjJduHVfSsGHEGcJMyckIwl7fXgxK1FUUrvkU5jYYQNE___5Bd0sSQ2loBqPvGxsAoF2fP7YHuWUVqPLzYoOynNhatiVxPh0IPxHNwreLxouiuAYJKRrKtuUUyULCGGry-YSh56QVGEyQ=w480-h480-s-no-gm?authuser=0)
 }

@@ -6,7 +6,6 @@ function HomeProduct({productList}) {
     <div className="mb-4">
       <div className="grid grid-cols-5 -ml-4 mb-2">
         {productList.map((productItem, index) => {
-          console.log(productItem);
           return <ContentsItem key={index} productItem={productItem} />;
         })}
       </div>
