@@ -3,7 +3,7 @@ function NavDropdownAdidas() {
   return (
     <div
       id="ChildAdidasShoes"
-      className="w-[70%] absolute after:absolute after:top-[14px] after:left-[-11px] after:content-[''] after:block  after:w-10 after:h-10  top-0 left-[372px] px-4 py-3 hidden group-hover/childAdidas:block "
+      className="w-[70%] h-full absolute after:absolute after:top-[14px] after:left-[-11px] after:content-[''] after:block  after:w-10 after:h-10  top-0 left-[372px] px-4 py-3 hidden group-hover/childAdidas:block "
     >
       <ul className="grid grid-cols-4 gap-0">
         <li className="text-[--colorTextSub] text-[16px]">

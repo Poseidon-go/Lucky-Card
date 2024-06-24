@@ -1,7 +1,8 @@
-import {BiChevronDown} from 'react-icons/bi';
+import { BiChevronDown } from "react-icons/bi";
 // import useRandomHolder from "../../../hooks/useRandomHolder";
-import {Link} from 'react-router-dom';
-import useRandomHolder from '../../../hooks/useRandomHolder';
+import { Link } from "react-router-dom";
+import useRandomHolder from "../../../hooks/useRandomHolder";
+import Login from "./Login";
 
 export interface HeaderProps {}
 
@@ -9,13 +10,16 @@ function Header(props: HeaderProps) {
   const holder = useRandomHolder();
   return (
     <div className="flex flex-col bg-[--bgHeader] cursor-pointer   ">
-      <div id="header__top" className="w-pc mx-auto flex items-center px-[10px]">
-        <div id="Head__logo" className="flex items-center pl-4">
+      <div
+        id="header__top"
+        className="w-pc mx-auto flex items-center px-[10px]"
+      >
+        <div id="Head__logo" className="flex items-center ">
           <span className="text-[#fff] text-[40px] font-bold ">
-            <Link to={'/'}>LuckyCard</Link>
+            <Link to={"/"}>LuckyCard</Link>
           </span>
         </div>
-        <div id="head__search" className="relative pl-8">
+        <div id="head__search" className="relative pl-8 ">
           <input
             type="text"
             className="w-[600px] p-2 outline-none rounded-[5px] text-[#000] placeholder:font-light"
@@ -34,7 +38,10 @@ function Header(props: HeaderProps) {
             />
           </button>
         </div>
-        <div id="head__location" className="flex items-center justify-center ml-2 pl-4">
+        <div
+          id="head__location"
+          className="flex items-center justify-center ml-2 pl-4"
+        >
           <img
             width="24"
             height="24"
@@ -49,13 +56,19 @@ function Header(props: HeaderProps) {
             </div>
           </div>
         </div>
-        <div id="head__login" className="flex items-center pl-4">
-          <img
-            width="24"
-            height="24"
-            src="https://theme.hstatic.net/200000525917/1000876879/14/user-account.svg?v=3642"
-            alt=""
-          />
+        <div
+          id="head__login"
+          className="flex items-center pl-4 group/focusLogin"
+        >
+          <div className="relative ">
+            <img
+              width="24"
+              height="24"
+              src="https://theme.hstatic.net/200000525917/1000876879/14/user-account.svg?v=3642"
+              alt=""
+            />
+            <Login />
+          </div>
           <div className="pl-3 text-[13px]">
             <span>Đăng Nhập</span> <br />
             <div className="flex items-center">

@@ -1,5 +1,5 @@
-import {BannerCarousel} from './BannerCarousel';
-import Main from './Main';
+import { BannerCarousel } from "./BannerCarousel";
+import Main from "./Main";
 
 function HomePage() {
   return (
