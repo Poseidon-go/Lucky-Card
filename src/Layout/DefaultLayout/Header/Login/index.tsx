@@ -3,9 +3,10 @@ function Login() {
     <div
       id="header__login"
       className="absolute bottom-[-302px] left-[-200px] w-[420px] bg-[--bg] p-[20px] z-10 shadow-lg 
-      group-focus/focusLogin:block hidden   
       after:absolute after:top-[-7px] after:left-[204px] after:content-[''] after:w-[15px] after:h-[15px]
-      after:rotate-45 after:bg-[--bg]"
+      after:rotate-45 after:bg-[--bg] hidden group-hover/focusLogin:block before:content-[''] before:absolute before:w-full before:h-5
+       before:top-[-16px] before:left-0
+      "
     >
       <h1
         id="header__login-title"
@@ -26,7 +27,7 @@ function Login() {
           className="border-[1px] border-[--borderInput] w-full p-2 mb-2 text-[--colorText] outline-none placeholder:text-[12px]"
         />
         <input
-          type="text"
+          type="password"
           placeholder="Mật Khẩu"
           className="border-[1px] border-[--borderInput] w-full p-2 mb-2 text-[--colorText] outline-none placeholder:text-[12px]"
         />

@@ -10,7 +10,7 @@ function DefaultLayout({ children }: DefaultLayout) {
     <div id="DefaultLayout">
       <Header />
       <NavBar />
-      <div className="mt-1">{children}</div>
+      <div className="mt-1 modal">{children}</div>
       <Footer />
     </div>
   );

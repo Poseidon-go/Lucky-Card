@@ -3,11 +3,23 @@ import { BiChevronDown } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import useRandomHolder from "../../../hooks/useRandomHolder";
 import Login from "./Login";
+import { useEffect, useState } from "react";
+import Location from "./Location";
 
-export interface HeaderProps {}
-
-function Header(props: HeaderProps) {
+function Header() {
   const holder = useRandomHolder();
+  const [isLoginVisible, setIsLoginVisible] = useState(true);
+
+  useEffect(() => {
+    const loginElement = document.getElementById("head__login");
+    if (!loginElement) return;
+    const toggleLoginVisibility = () => {
+      console.log(isLoginVisible);
+      setIsLoginVisible((prev) => !prev);
+    };
+
+    loginElement.addEventListener("click", toggleLoginVisibility);
+  }, []);
   return (
     <div className="flex flex-col bg-[--bgHeader] cursor-pointer   ">
       <div
@@ -40,14 +52,17 @@ function Header(props: HeaderProps) {
         </div>
         <div
           id="head__location"
-          className="flex items-center justify-center ml-2 pl-4"
+          className="flex items-center justify-center ml-2 pl-4 group/focusLocation relative"
         >
-          <img
-            width="24"
-            height="24"
-            src="https://theme.hstatic.net/200000525917/1000876879/14/location.svg?v=3642"
-            alt="icon-location"
-          />
+          <div>
+            <img
+              width="24"
+              height="24"
+              src="https://theme.hstatic.net/200000525917/1000876879/14/location.svg?v=3642"
+              alt="icon-location"
+            />
+          </div>
+          <Location />
           <div className="pl-4 text-[13px]">
             <span>Hệ thống</span> <br />
             <div className="flex items-center">
@@ -67,6 +82,7 @@ function Header(props: HeaderProps) {
               src="https://theme.hstatic.net/200000525917/1000876879/14/user-account.svg?v=3642"
               alt=""
             />
+            {/* {isLoginVisible || <Login />} */}
             <Login />
           </div>
           <div className="pl-3 text-[13px]">
