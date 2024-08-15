@@ -1,9 +1,10 @@
-interface Button {
+interface ButtonProps {
   name?: string;
   styleButton?: string;
   styleText?: string;
 }
-function ButtonCustom(props: Button) {
+
+function ButtonCustom(props: ButtonProps) {
   const { name, styleButton, styleText } = props;
   return (
     <button className={styleButton}>

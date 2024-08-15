@@ -45,6 +45,18 @@ function App() {
             />
           }
         />
+        <Route
+          path="/info"
+          element={
+            <DefaultLayout
+              children={
+                <>
+                  <PerfumeHome />
+                </>
+              }
+            />
+          }
+        />
       </Routes>
     </div>
   );

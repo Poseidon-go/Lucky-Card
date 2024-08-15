@@ -1,5 +1,5 @@
-import PromotionsCard from './PromotionsCard';
-function PromotionsSection({proList}) {
+import PromotionsCard from "./PromotionsCard";
+function PromotionsSection({ proList }) {
   return (
     <div id="MainPromotions__coupon" className="mb-14">
       <h1 className="border-l-[3px] border-[#000]">
@@ -9,7 +9,7 @@ function PromotionsSection({proList}) {
       </h1>
       <div className="flex gird grid-cols-4 gap-4 mb-4">
         {proList.map((proItem, index) => {
-          const {ship, priceOrder, code, date, price} = proItem;
+          const { ship, priceOrder, code, date, price } = proItem;
 
           return (
             <PromotionsCard

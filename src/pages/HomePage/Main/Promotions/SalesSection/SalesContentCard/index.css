@@ -1,3 +1,24 @@
 #SalesContentCard__addStock {
     transition: opacity 0.5s ease-in-out;
 }
+
+/* #SalesContentCard__addStock span {
+    animation-name: zeroToMaxWidht;
+    animation-duration: 250ms;
+    animation-iteration-count: 1;
+    animation-delay: 1ms;
+}
+
+@keyframes zeroToMaxWidht {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 80px;
+    }
+} */
+
+#SalesContentCard__addStock #SalesContentCard__text {
+    transition: width 1s;
+}

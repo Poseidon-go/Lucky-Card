@@ -91,18 +91,18 @@ const Footer = () => {
                 <li className="flex items-center ">
                   <IoLocationOutline className="font-semibold mr-1" />
                   <span className="text-[14px] py-1 text-wrap font-semibold">
-                    432/24 Lạc Long Quân, Phường 5, Quận 11
+                    62/8 Lê Văn Huân Phường 13 Quận Tân Bình
                   </span>
                 </li>
-                <li className="flex items-center  py-1 text-wrap ">
+                <li className="flex items-center  py-1 text-wrap group   ">
                   <LiaPhoneSolid className="font-semibold mr-1" />
-                  <span className="text-[14px]  font-semibold hover:text-[--colorshophover] transition duration-300 ease-in-out ">
+                  <span className="text-[14px]  font-semibold  transition duration-300 ease-in-out group-hover:text-[--colorshophover] ">
                     0985449437
                   </span>
                 </li>
-                <li className="flex items-center pt-1 pb-2  ">
+                <li className="flex items-center pt-1 pb-2 group   ">
                   <MdOutlineEmail className="font-semibold mr-1" />
-                  <span className="text-[14px] font-semibold  hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                  <span className="text-[14px]  font-semibold  transition duration-300 ease-in-out group-hover:text-[--colorshophover] ">
                     duongoc79@gmail.com
                   </span>
                 </li>
@@ -117,33 +117,33 @@ const Footer = () => {
             <div className="w-2/6">
               <span className="text-[17px] font-semibold">CHÍNH SÁCH</span>
               <ul className="list-disc pt-2">
-                <li className="py-1 ">
-                  <span className="text-[14px] font-semibold  hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                <li className="py-1 group  ">
+                  <span className="text-[14px] font-semibold  group-hover:text-[--colorshophover] transition duration-300 ease-in-out">
                     Hệ thống cửa hàng
                   </span>
                 </li>
-                <li className="py-1 ">
-                  <span className="text-[14px] font-semibold  hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                <li className="py-1 group ">
+                  <span className="text-[14px] font-semibold  group-hover:text-[--colorshophover] transition duration-300 ease-in-out">
                     Giới thiệu
                   </span>
                 </li>
-                <li className="py-1 ">
-                  <span className="text-[14px] font-semibold  hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                <li className="py-1 group">
+                  <span className="text-[14px] font-semibold  group-hover:text-[--colorshophover] transition duration-300 ease-in-out">
                     Chính sách đổi trả
                   </span>
                 </li>
-                <li className="py-1 ">
-                  <span className="text-[14px] font-semibold  hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                <li className="py-1 group">
+                  <span className="text-[14px] font-semibold  group-hover:text-[--colorshophover] transition duration-300 ease-in-out">
                     Chính sách bảo mật
                   </span>
                 </li>
-                <li className="py-1 ">
-                  <span className=" text-[14px] font-semibold hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                <li className="py-1 group">
+                  <span className=" text-[14px] font-semibold group-hover:text-[--colorshophover] transition duration-300 ease-in-out">
                     Điều khoản dịch vụ
                   </span>
                 </li>
-                <li className="py-1 ">
-                  <span className="text-[14px] font-semibold  hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                <li className="py-1 group">
+                  <span className="text-[14px] font-semibold  group-hover:text-[--colorshophover] transition duration-300 ease-in-out">
                     Liên Hệ
                   </span>
                 </li>
@@ -154,16 +154,16 @@ const Footer = () => {
             id="footer__policy-instruct"
             className="flex w-3/6 justify-between"
           >
-            <div>
+            <div className="w-4/6">
               <span className="text-[17px] font-semibold">HƯỚNG DẪN</span>
               <ul className="list-disc pt-2">
-                <li className="py-1 ">
-                  <span className="text-[14px] font-semibold hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                <li className="py-1 group">
+                  <span className="text-[14px] font-semibold group-hover:text-[--colorshophover] transition duration-300 ease-in-out">
                     Sản phẩm nổi bật
                   </span>
                 </li>
-                <li className="py-1  ">
-                  <span className="text-[14px] font-semibold hover:text-[--colorshophover] transition duration-300 ease-in-out">
+                <li className="py-1  group">
+                  <span className="text-[14px] font-semibold group-hover:text-[--colorshophover] transition duration-300 ease-in-out">
                     Tất cả sản phẩm
                   </span>
                 </li>

@@ -1,4 +1,4 @@
-import {useState, useEffect, useMemo} from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 const useRandomHolder = () => {
   const holderList = useMemo(
@@ -16,7 +16,7 @@ const useRandomHolder = () => {
 
     const intervalId = setInterval(changeHolder, 2000);
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
   }, [holderList]);
 
   return holder;

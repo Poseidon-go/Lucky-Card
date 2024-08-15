@@ -1,13 +1,17 @@
 import { BiChevronDown } from "react-icons/bi";
 // import useRandomHolder from "../../../hooks/useRandomHolder";
+import { useEffect, useState } from "react";
+import { IoMdMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 import useRandomHolder from "../../../hooks/useRandomHolder";
-import Login from "./Login";
-import { useEffect, useState } from "react";
+import Cart from "./Cart";
 import Location from "./Location";
+import Login from "./Login";
+import CountCart from "./Cart/components/countCart";
 
 function Header() {
   const holder = useRandomHolder();
+  const count = 1;
   const [isLoginVisible, setIsLoginVisible] = useState(true);
 
   useEffect(() => {
@@ -27,28 +31,40 @@ function Header() {
         className="w-pc mx-auto flex items-center px-[10px]"
       >
         <div id="Head__logo" className="flex items-center ">
+          <span className="text-[40px] font-bold sm:hidden">
+            <IoMdMenu />
+          </span>
           <span className="text-[#fff] text-[40px] font-bold ">
             <Link to={"/"}>LuckyCard</Link>
           </span>
         </div>
         <div id="head__search" className="relative pl-8 ">
-          <input
-            type="text"
-            className="w-[600px] p-2 outline-none rounded-[5px] text-[#000] placeholder:font-light"
-            placeholder={holder}
-          />
-          <button
-            id="header__search-lock"
-            className="flex items-center justify-center w-[80px] h-[36px] leading-[36px] absolute top-[2px] right-[2px] px-[15px] py-[8px] bg-[--bgHeader] rounded-[5px]"
-          >
-            <img
-              width={24}
-              height={24}
-              src="https://theme.hstatic.net/200000525917/1000876879/14/search-icon.svg?v=3642"
-              alt=""
-              className="aspect-auto"
+          <div className="hidden sm:block ">
+            <input
+              type="text"
+              className="w-[600px] p-2 outline-none rounded-[5px] text-[#000] placeholder:font-light"
+              placeholder={holder}
             />
-          </button>
+            <button
+              id="header__search-lock"
+              className="flex items-center justify-center w-[80px] h-[36px] leading-[36px] absolute top-[2px] right-[2px] px-[15px] py-[8px] bg-[--bgHeader] rounded-[5px]"
+            >
+              <img
+                width={24}
+                height={24}
+                src="https://theme.hstatic.net/200000525917/1000876879/14/search-icon.svg?v=3642"
+                alt=""
+                className="aspect-auto"
+              />
+            </button>
+          </div>
+          <img
+            width="24"
+            height="24"
+            src="https://theme.hstatic.net/200000525917/1000876879/14/search-icon.svg?v=3642"
+            alt="icon-search"
+            className="block sm:hidden"
+          />
         </div>
         <div
           id="head__location"
@@ -60,10 +76,11 @@ function Header() {
               height="24"
               src="https://theme.hstatic.net/200000525917/1000876879/14/location.svg?v=3642"
               alt="icon-location"
+              className="hidden sm:block"
             />
           </div>
           <Location />
-          <div className="pl-4 text-[13px]">
+          <div className="pl-4 text-[13px] hidden sm:block">
             <span>Hệ thống</span> <br />
             <div className="flex items-center">
               <span>Cửa hàng</span>
@@ -82,10 +99,9 @@ function Header() {
               src="https://theme.hstatic.net/200000525917/1000876879/14/user-account.svg?v=3642"
               alt=""
             />
-            {/* {isLoginVisible || <Login />} */}
             <Login />
           </div>
-          <div className="pl-3 text-[13px]">
+          <div className="pl-3 text-[13px] hidden sm:block">
             <span>Đăng Nhập</span> <br />
             <div className="flex items-center">
               <span>Đăng Ký</span>
@@ -93,14 +109,22 @@ function Header() {
             </div>
           </div>
         </div>
-        <div id="head__cart" className="flex items-center pl-5">
+        <div
+          id="head__cart"
+          className="flex items-center pl-5 relative  group/focusCart"
+        >
           <img
             width="24"
             height="24"
             src="https://theme.hstatic.net/200000525917/1000876879/14/shopping-cart.svg?v=3642"
             alt=""
+            className=""
           />
-          <span className="inline-block text-[13px] pl-3">Giỏ hàng</span>
+          <span className="text-[13px] pl-3 hidden sm:inline-block">
+            Giỏ hàng
+          </span>
+          {count === 1 ? <CountCart /> : null}
+          <Cart />
         </div>
       </div>
     </div>

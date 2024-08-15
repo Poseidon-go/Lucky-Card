@@ -4,7 +4,7 @@ import NavDropdown from "./components/NavDropdown";
 
 export default function NavBar() {
   return (
-    <div className=" bg-white shadow-2xl ">
+    <div className=" bg-white shadow-lg hidden sm:block ">
       <div className="w-pc mx-auto ">
         <ul className="relative flex items-center justify-center cursor-pointer ">
           <li className="text-[#000] text-[16px] px-[15px] py-[10px] font-semibold hover:text-[--colorshophover] transition duration-300 ease-in-out ">
